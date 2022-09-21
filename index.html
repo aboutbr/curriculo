@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+    
+<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<head>
     <title>PROGRAM SENAC</title>
 
 <style>
+
 
 *{
     margin: 0;
@@ -17,48 +20,87 @@
 }
 
 header{
-
-    image-rendering: 30px;
+    
     background-color: rgb(238, 255, 0);
-    text-align: center;
     background-image: url(./img/binario.jpg);
-    height: 235px;
     background-position: center;
     background-size: cover;
-    padding: 30px;
     color: white;
+    padding: 30px;
+    text-align: center;
 
+}
+
+     header {
+
+              display:inline-block;
+              width: 100%;
+}
+
+     header h1 {
+
+              color: rgb(212, 255, 0);
+            
+
+}
+
+
+     #imagem img {
+        width: 200px;
+        background-color: red;
+        float: left;
+     }
+
+
+      #dado {
+
+              width: 100px;
+              float: left;
     
 }
-header div{
 
-    display:inline-block;
-    width: 20%;
-    background-color: aquamarine;
-}
-header div img{
-    width: 160px;
-    background-color: blue;
+      .row {
 
-}
+        display: table;
+        float: none;
+        content: "";
+        overflow: auto;
+      }
 
 
-header h1 {
-    color: rgb(212, 255, 0);
-
-}
-
-header p{
-    color: white;
-}
 nav{
+
     background-color: rgb(189, 179, 179);
-    height: 100px;
+    
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 150px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+
+    background-color: #000000;
+    color: rgb(255, 0, 0);
 }
 
 #sobre{
     background-color: blueviolet;
     height: 300px;
+    padding-top: 65px;
+}
+
+#sobre p{
+    background-color: black;
+    color: white;
+    padding: 39px;
+    margin-left: 100px;
+    margin-right: 1100px;
+    text-align:justify;
 }
 
 #experiencias{
@@ -73,19 +115,52 @@ nav{
 
 #contato{
     background-color: rgb(75, 75, 74);
-    height: 300px;
+    height: 150x;
 }
 
+#contato img{
+    float:center;
+    
+}
 
+#facebook{
+
+    display: inline-block;
+    margin-left: 240px;
+    margin-right: 150px;
+    padding:10px 10px;
+}
+
+#instagram{
+
+display: inline-block;
+margin-left: 150px;
+margin-right: 150px;
+padding:10px 10px;
+
+
+}
+
+#twitter{
+
+display: inline-block;
+margin-left: 150px;
+margin-right: 150px;
+padding: 10px 10px;
+
+
+}
 
 footer{
-    background-color: rgb(88, 192, 159);
+    background-color: rgb(0, 0, 0);
     height: 100px;
+    size: 10%;
 }
 
-
-#logo img {
-    border-radius: 10px;
+footer p{
+    color: aliceblue;
+    text-align: center;
+    padding: 39px;
 }
 
 </style>
@@ -94,55 +169,85 @@ footer{
 </head>
 
 <body>
+    
+    <header class="row">
+        
+        <div id="imagem">
 
-<header>
+             <img src="./img/pic.png" alt="picprofile">
 
-<div>
-        <img src="./img/pic.png" alt="picprofile">
-</div>
+        </div>
+    
+        <div class="dado">
 
-<div>
-    <h1>BRUNO NUNES</h1>
-    <p> Programador Web</p>
-    <p> Rio De Janeiro, Brasil</p>
-</div>
+             <h1>BRUNO NUNES</h1>
+             <p> Programador Web</p>
+             <p> Rio De Janeiro, Brasil</p>
 
-</header>
+        </div>
+
+
+    </header>
 
 <nav>
-    <ul class="">
-        <li><a	href="sobre">Sobre</a></li>
-        <li><a	href="experiencias">Experiências</a></li>
-        <li><a	href="conhecimentos">Conhecimentos</a></li>
-        <li><a	href="contato">Contato</a></li>
-    </ul>
+
+        <a href="sobre">Sobre</a>
+        <a href="experiencias">Experiências</a>
+        <a href="conhecimentos">Conhecimentos</a>
+        <a href="contato">Contato</a>
 
 </nav>
 
 
     <section id="sobre">
-        Aqui entrar o conteúdo SOBRE
+
+        <div>
+            <p>Carioca, morador da Barra da Tijuca, muito interessado
+                em trabalhar porque estou desempregado. Mas também não posso
+                reclamar porque estou de férias graças a DEUS. kk</p>
+        </div>
+
     </section>
 
     <section id="experiencias">
+
         Aqui entra o conteúdo EXPERIÊNCIAS
+
     </section>
 
     <section id="conhecimentos">
+
         Aqui entra o conteúdo CONHECIMENTOS
+
     </section>
 
     <section id="contato">
-        Aqui entra o conteúdo CONTATO
 
-        <img src="img/face.png" alt="facebook"> 
-    <img src="img/ig.png" alt="instagram">
-    <img src="img/wtt.png" alt="twitter">
+        <div id="facebook">
+
+            <img src="img/face.png" alt="facebook">
+
+        </div>
+
+        <div id="instagram">
+
+            <img src="img/ig.png" alt="instagram">
+            
+        </div>
+
+        <div id="twitter">
+
+            <img src="img/wtt.png" alt="twitter">
+            
+        </div>
+        
 
     </section>
 
     <footer>
-        Aqui entra o rodapé
+
+        <p>-------- Copyright by Aboutbr --------</p>
+
     </footer>
 
      
